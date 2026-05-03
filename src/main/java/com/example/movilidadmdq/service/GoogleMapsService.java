@@ -14,7 +14,7 @@ import jakarta.annotation.PostConstruct;
 @Service
 public class GoogleMapsService {
 
-    @Value("${google.maps.api.key}")
+    @Value("${GOOGLE_MAPS_KEY}")
     private String apiKey;
 
     private GeoApiContext context;

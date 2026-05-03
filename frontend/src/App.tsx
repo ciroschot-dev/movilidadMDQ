@@ -31,13 +31,7 @@ function App() {
   const handleSelectOption = (url: string) => {
     if (!url) return;
 
-    if (
-      url.startsWith("http://") ||
-      url.startsWith("https://") ||
-      url.startsWith("tel:")
-    ) {
-      window.open(url, "_blank", "noopener,noreferrer");
-    }
+    window.location.href = url;
   };
 
   const formatPrecio = (precio: number) =>
